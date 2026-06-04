@@ -8,7 +8,7 @@ st.set_page_config(page_title="Ekonomi Veri Analizi", page_icon="📈", layout="
 # Инициализируем клиент Gemini
 @st.cache_resource
 def get_gemini_client():
-    return genai.Client(api_key="AQ.Ab8RN6KTHoDd1Dg6v04NPVI9WyQy2K0QEfYTbo5YnuucPqupCQ")
+    return genai.Client(api_key=st.secrets["AQ.Ab8RN6Ih-DQe9yfKQXrBNUDeK7uM6KpL9eu-Pl8QW20jZPnwRw"])
 
 client = get_gemini_client()
 
